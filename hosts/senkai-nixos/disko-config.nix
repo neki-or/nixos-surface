@@ -22,9 +22,25 @@
             root = {
               size = "100%";
               content = {
-                type = "filesystem";
-                format = "ext4";
-                mountpoint = "/";
+                type = "btrfs";
+                extraArgs = ["-L" "nixos" "-f"];
+                subvolumes = {
+                  "/root" = {
+                    mountpoint = "/";
+                  };
+                  "/home" = {
+                    mountpoint = "/home";
+                    mountOptions = ["subvol=home" "compress=zstd" ];
+                  };
+                  "/nix" = {
+                    mountpoint = "/nix";
+                    mountOptions = ["subvol=nix" "compress=zstd" "noatime"];
+                  };
+                  "/log" = {
+                    mountpoint = "/var/log";
+                    mountOptions = ["subvol=log" "compress=zstd" "noatime"];
+                  };
+                };
               };
             };
 
@@ -33,4 +49,6 @@
       };
     };
   };
+
+  fileSystems."/var/log".neededForBoot = true;
 }
