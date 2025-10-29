@@ -20,7 +20,7 @@
             };
 
             root = {
-              size = "100%";
+              end = "-8G"; # Leave space for SWAP (no hibernation)
               content = {
                 type = "btrfs";
                 extraArgs = ["-L" "nixos" "-f"];
@@ -41,6 +41,15 @@
                     mountOptions = ["subvol=log" "compress=zstd" "noatime"];
                   };
                 };
+              };
+            };
+
+            swap = {
+              size = "100%";
+              content = {
+                type = "swap";
+                extraArgs = ["-L" "swap" ];
+                discardPolicy = "both";
               };
             };
 
