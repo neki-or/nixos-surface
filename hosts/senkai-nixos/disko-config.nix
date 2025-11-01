@@ -56,6 +56,15 @@
         };
       };
     };
+
+    nodev = {
+      "/tmp" = {
+        device = "tmpfs";
+        fsType = "tmpfs";
+        mountOptions = [ "size=256M" "defaults" "mode=1777" "noatime" ];
+      };
+    };
+
   };
 
   fileSystems."/var/log".neededForBoot = true;
