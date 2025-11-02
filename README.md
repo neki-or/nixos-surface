@@ -1,4 +1,4 @@
-# nix-surface
+# nixos-surface
 
 NixOS config for my Surface Pro 4
 
@@ -7,7 +7,7 @@ NixOS config for my Surface Pro 4
 
 2) Clone this repository: 
 ```bash
-git clone https://github.com/neki-or/nix-surface.git /tmp/nix-surface
+git clone https://github.com/neki-or/nixos-surface.git /tmp/nixos-surface
 ```
 
 3) Run disko to wipe the drive and create all needed partitions:
@@ -15,7 +15,7 @@ git clone https://github.com/neki-or/nix-surface.git /tmp/nix-surface
 nix --experimental-features "nix-command flakes" run \
     github:nix-community/disko/6f4cf5abbe318e4cd1e879506f6eeafd83f7b998 -- \
     --mode destroy,format,mount \
-    /tmp/nix-surface/hosts/senkai-nixos/disko-config.nix
+    /tmp/nixos-surface/hosts/senkai-nixos/disko-config.nix
 
 # Check using `lsblk` that the command behaved as expected
 ```
@@ -23,8 +23,8 @@ nix --experimental-features "nix-command flakes" run \
 4) Setup NixOS configurations
 ```bash
 nixos-generate-config --no-filesystems --root /mnt
-cp /tmp/nix-surface/hosts/senkai-nixos/disko-config.nix /mnt/etc/nixos
-cp /tmp/nix-surface/hosts/senkai-nixos/configuration.nix /mnt/etc/nixos
+cp /tmp/nixos-surface/hosts/senkai-nixos/disko-config.nix /mnt/etc/nixos
+cp /tmp/nixos-surface/hosts/senkai-nixos/configuration.nix /mnt/etc/nixos
 ```
 
 5) Install NixOS
