@@ -2,6 +2,7 @@
 {
   imports =
     [
+      "${builtins.fetchTarball "https://github.com/NixOS/nixos-hardware/archive/7467f155fcba189eb088a7601f44fbef7688669b.tar.gz"}/microsoft/surface/surface-pro-intel"
       ./hardware-configuration.nix
       # Pin revision to a commit as the latest release is 100+ commits behind master
       "${builtins.fetchTarball "https://github.com/nix-community/disko/archive/6f4cf5abbe318e4cd1e879506f6eeafd83f7b998.tar.gz"}/module.nix"
@@ -13,6 +14,8 @@
   boot.loader.grub.efiSupport = true;
   boot.loader.grub.efiInstallAsRemovable = true;
   boot.loader.grub.device = "nodev";
+
+  hardware.microsoft-surface.kernelVersion = "stable";
 
   networking.hostName = "senkai-nixos";
   networking.networkmanager.enable = true;
