@@ -20,6 +20,8 @@
   networking.hostName = "senkai-nixos";
   networking.networkmanager.enable = true;
 
+  nix.settings.build-dir = "/var/tmp";
+
   time.timeZone = "Europe/Rome";
 
   i18n.defaultLocale = "en_US.UTF-8";
