@@ -22,6 +22,10 @@
 
   nix.settings.build-dir = "/var/tmp";
 
+  services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.wayland.enable = true;
+  services.desktopManager.plasma6.enable = true;
+
   time.timeZone = "Europe/Rome";
 
   i18n.defaultLocale = "en_US.UTF-8";
