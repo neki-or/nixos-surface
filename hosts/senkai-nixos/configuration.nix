@@ -4,7 +4,7 @@
     [
       ./hardware-configuration.nix
       # Pin revision to a commit as the latest release is 100+ commits behind master
-      "${builtins.fetchTarball "https://github.com/nix-community/disko/6f4cf5abbe318e4cd1e879506f6eeafd83f7b998.tar.gz"}/module.nix"
+      "${builtins.fetchTarball "https://github.com/nix-community/disko/archive/6f4cf5abbe318e4cd1e879506f6eeafd83f7b998.tar.gz"}/module.nix"
       ./disko-config.nix
     ];
 
