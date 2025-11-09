@@ -11,7 +11,6 @@
 
   nixpkgs = {
     overlays = [];
-    # Configure your nixpkgs instance
     config = {
       allowUnfree = true;
       # Workaround for https://github.com/nix-community/home-manager/issues/2942
@@ -24,13 +23,8 @@
     homeDirectory = "/home/neki";
   };
 
-  # Add stuff for your user as you see fit:
-  # programs.neovim.enable = true;
-  # home.packages = with pkgs; [ steam ];
-
   # Enable home-manager and git
   programs.home-manager.enable = true;
-  programs.git.enable = true;
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";

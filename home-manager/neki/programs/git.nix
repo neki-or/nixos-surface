@@ -4,7 +4,7 @@
     settings = {
       user = {
         name = "neki-or";
-        email = "somaschini.marco2@gmail.com";
+        email = "somaschini.marco2@gmail.com"; # Witness my personal email, I couldn't care less
       };
 
       core = {
