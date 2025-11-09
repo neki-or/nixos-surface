@@ -1,8 +1,10 @@
 {
-  boot = import ./boot.nix;
-  locale = import ./locale.nix;
-  nix = import ./nix.nix;
-  networking = import ./networking.nix;
-  services = import ./services.nix;
-  users = import ./users.nix;
+  imports = [
+    ./boot.nix
+    ./locale.nix
+    ./nix.nix
+    ./networking.nix
+    ./services.nix
+    ./users.nix
+  ];
 }

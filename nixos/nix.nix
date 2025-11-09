@@ -1,4 +1,9 @@
 {
+  inputs,
+  lib,
+  config,
+  ...
+}: {
   nixpkgs = {
     overlays = [];
     config = {

@@ -1,4 +1,7 @@
 {
+  pkgs,
+  ...
+}: {
   users.users = {
     neki = {
       isNormalUser = true;
