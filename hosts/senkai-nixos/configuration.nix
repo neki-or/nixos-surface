@@ -20,7 +20,7 @@
   # Use patched kernel 6.15 for better webcam support (hopefully)
   hardware.microsoft-surface.kernelVersion = "stable";
 
-  console.keymap = "it";
+  console.keyMap = "it";
 
   environment.systemPackages = with pkgs; [
     vim
