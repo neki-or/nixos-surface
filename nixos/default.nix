@@ -5,6 +5,7 @@
     ./nix.nix
     ./networking.nix
     ./services.nix
+    ./steam.nix
     ./users.nix
   ];
 }
