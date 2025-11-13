@@ -39,6 +39,11 @@
         extraSpecialArgs = {inherit inputs outputs;};
         modules = [./home-manager/neki/home.nix];
       };
+      "gianni@senkai-nixos" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        extraSpecialArgs = {inherit inputs outputs;};
+        modules = [./home-manager/gianni/home.nix];
+      };
     };
   };
 }
