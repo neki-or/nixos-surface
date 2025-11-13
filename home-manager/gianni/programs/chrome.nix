@@ -4,7 +4,7 @@
 }: {
   programs.chromium = {
     enable = true;
-    package = pkgs.brave;
+    package = pkgs.google-chrome;
     commandLineArgs = [];
     extensions = []; # {id = "";}  // extension id, query from chrome web store
   };

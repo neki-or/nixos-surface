@@ -8,5 +8,12 @@
       extraGroups = [ "wheel" "networkmanager" ];
       packages = with pkgs; [];
     };
+
+    gianni = {
+      isNormalUser = true;
+      extraGroups = [];
+      packages = with pkgs; [];
+    };
+
   };
 }
