@@ -1,6 +1,7 @@
 {
   imports = [
     ./boot.nix
+    ./kde.nix
     ./locale.nix
     ./nix.nix
     ./networking.nix
