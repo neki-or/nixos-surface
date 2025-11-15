@@ -23,10 +23,7 @@
     username = "gianni";
     homeDirectory = "/home/gianni";
 
-    sessionVariables = {
-      GDK_SCALE = "2";
-      XCURSOR_SIZE = "48";
-    };
+    sessionVariables = {};
 
     packages = with pkgs; [
       onlyoffice-bin

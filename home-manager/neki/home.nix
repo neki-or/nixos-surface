@@ -24,11 +24,7 @@
     username = "neki";
     homeDirectory = "/home/neki";
 
-    sessionVariables = {
-      EDITOR = "vim";
-      GDK_SCALE = "2";
-      XCURSOR_SIZE = "48";
-    };
+    sessionVariables = {};
 
     packages = with pkgs; [];
 
