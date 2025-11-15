@@ -7,6 +7,7 @@
 }: {
   imports = [
     ./programs
+    ./steam
   ];
 
   nixpkgs = {
@@ -18,13 +19,20 @@
     };
   };
 
+  programs.home-manager.enable = true;
   home = {
     username = "neki";
     homeDirectory = "/home/neki";
-  };
 
-  # Enable home-manager and git
-  programs.home-manager.enable = true;
+    sessionVariables = {
+      EDITOR = "vim";
+      GDK_SCALE = "2";
+      XCURSOR_SIZE = "48";
+    };
+
+    packages = with pkgs; [];
+
+  };
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";

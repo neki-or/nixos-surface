@@ -8,6 +8,6 @@
 
   home.sessionVariables = {
     STEAM_RUNTIME = "1";
-    # STEAM_FORCE_DESKTOPUI_SCALING = "1.25";
+    STEAM_FORCE_DESKTOPUI_SCALING = "1.25";
   };
 }

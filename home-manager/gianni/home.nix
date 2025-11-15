@@ -18,13 +18,21 @@
     };
   };
 
+  programs.home-manager.enable = true;
   home = {
     username = "gianni";
     homeDirectory = "/home/gianni";
-  };
 
-  # Enable home-manager and git
-  programs.home-manager.enable = true;
+    sessionVariables = {
+      GDK_SCALE = "2";
+      XCURSOR_SIZE = "48";
+    };
+
+    packages = with pkgs; [
+      onlyoffice-bin
+    ];
+
+  };
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
