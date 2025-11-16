@@ -23,7 +23,7 @@
     serviceConfig = {
       Type = "dbus";
       BusName = "org.bluez";
-      ExecStart = "${bluez}/lib/libexec/bluetooth/bluetoothd";
+      ExecStart = "${bluez}/libexec/bluetooth/bluetoothd";
       NotifyAccess = "main";
       CapabilityBoundingSet = [ "CAP_NET_ADMIN" "CAP_NET_BIND_SERVICE" ];
       LimitNPROC = 1;

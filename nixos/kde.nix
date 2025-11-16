@@ -10,13 +10,13 @@
   };
 
   environment.systemPackages = with pkgs; [
+    kdePackages.bluedevil
+    kdePackages.bluez-qt
     kdePackages.kcalc
     kdePackages.plasma-wayland-protocols
     kdePackages.print-manager
     kdePackages.sddm-kcm
     kdePackages.wayland-protocols
-    # kdePackages.wayland-utils
-    # kdePackages.wl-clipboard
     kdePackages.xwaylandvideobridge
   ];
 
