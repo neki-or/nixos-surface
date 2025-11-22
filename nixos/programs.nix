@@ -1,8 +1,8 @@
 {
   programs = {
-    gamescope = {
+    gamemode = {
       enable = true;
-      capSysNice = true;
+      enableRenice = true;
     };
   };
 }

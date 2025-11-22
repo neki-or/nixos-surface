@@ -13,6 +13,7 @@
   };
 
   # Copied from my desktop with "Fedora" and KDE
+  /*
   systemd.services.bluetooth = let
     bluez = pkgs.bluez.outPath;
 
@@ -52,5 +53,6 @@
     wantedBy = [ "bluetooth.target" ];
     aliases = [ "dbus-org.bluez.service" ];
   };
+  */
 
 }
