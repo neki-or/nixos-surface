@@ -14,6 +14,8 @@
     })
 
     pkgs.gamescope
+    pkgs.goverlay
+    pkgs.mangohud
     # pkgs.protontricks
 
   ];
