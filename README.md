@@ -33,3 +33,20 @@ nixos-install
 ```
 
 6) `reboot`
+
+## TODO
+- [ ] Secure Boot [refs: [Secure-Boot](https://github.com/linux-surface/linux-surface/wiki/Secure-Boot)]
+- [ ] Check Surface Control Utility [refs: [Utilities-and-Packages#surface-control-utility](https://github.com/linux-surface/linux-surface/wiki/Utilities-and-Packages#surface-control-utility)]
+- [ ] Surface Pen & Touch [refs: [SP4 Touch Guide](https://github.com/linux-surface/linux-surface/wiki/Surface-Pro-4#how-to-get-touch-working-properly-on-surface-pro-4-the-definitive-guide)]
+- [ ] IPTS deamon prevent shutdown by kernel panic
+- [ ] Fix Bluetooth
+- [ ] Test Webcam [refs: [Camera-Support](https://github.com/linux-surface/linux-surface/wiki/Camera-Support)]
+- [ ] Check if Marvell PCIe affects us [refs: [Marvell-88W8897-quirks](https://github.com/linux-surface/linux-surface/wiki/Marvell-88W8897-quirks)]
+- [ ] Extra check on thermald [refs: [Thermald-setup-and-configuration](https://github.com/linux-surface/linux-surface/wiki/Thermald-setup-and-configuration)]
+- [ ] On-screen Keyboard in detached mode
+- [ ] Test headphones
+- [ ] Check for this known lid bug [refs: [suspend-aka-sleep-vs-lid-closingopening-events](https://github.com/linux-surface/linux-surface/wiki/Known-Issues-and-FAQ#suspend-aka-sleep-vs-lid-closingopening-events)]
+- [ ] Install flatpak and appimage to avoid having to deal with Nix for everything :)
+- [ ] Make a separate gaming module
+- [ ] Try to fix flickergate with some hack
+- [ ] Check post-installation [refs: [post-installation](https://github.com/linux-surface/linux-surface/wiki/Installation-and-Setup#post-installation)]
